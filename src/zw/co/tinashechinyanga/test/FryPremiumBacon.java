@@ -3,7 +3,7 @@ package zw.co.tinashechinyanga.test;
 import org.junit.Test;
 import zw.co.tinashechinyanga.test.Factory.DriverFactory;
 import zw.co.tinashechinyanga.test.UserProfiles.MunozProfile;
-import zw.co.tinashechinyanga.test.UserProfiles.MutsaProfile;
+import zw.co.tinashechinyanga.test.UserProfiles.UserProfile;
 import zw.co.tinashechinyanga.test.Utils.CommonUtils;
 
 /**
@@ -25,11 +25,11 @@ public class FryPremiumBacon {
 
         driverFactory.saveEntryOrFryAgainPage.clickServeEntryIcon();
 
-        driverFactory.enterUserDetailsPage.enterNickname(MunozProfile.NICKNAME.getValue());
-        driverFactory.enterUserDetailsPage.enterFirstname(MunozProfile.NAME.getValue());
-        driverFactory.enterUserDetailsPage.enterSurname(MunozProfile.SURNAME.getValue());
-        driverFactory.enterUserDetailsPage.enterCellphone(MunozProfile.NUMBER.getValue());
-        driverFactory.enterUserDetailsPage.enterEmail(MunozProfile.EMAIL.getValue());
+        driverFactory.enterUserDetailsPage.enterNickname(UserProfile.NICKNAME.getProfileValue());
+        driverFactory.enterUserDetailsPage.enterFirstname(UserProfile.NAME.getProfileValue());
+        driverFactory.enterUserDetailsPage.enterSurname(UserProfile.SURNAME.getProfileValue());
+        driverFactory.enterUserDetailsPage.enterCellphone(UserProfile.NUMBER.getProfileValue());
+        driverFactory.enterUserDetailsPage.enterEmail(UserProfile.EMAIL.getProfileValue());
 
         try {
             Thread.sleep(1000);

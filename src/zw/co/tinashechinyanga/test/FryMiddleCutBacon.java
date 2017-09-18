@@ -4,7 +4,7 @@ import org.junit.Test;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import zw.co.tinashechinyanga.test.Factory.DriverFactory;
-import zw.co.tinashechinyanga.test.UserProfiles.TinasheProfile;
+import zw.co.tinashechinyanga.test.UserProfiles.UserProfile;
 import zw.co.tinashechinyanga.test.Utils.CommonUtils;
 import zw.co.tinashechinyanga.test.Utils.DriverUtils;
 
@@ -37,11 +37,11 @@ public class FryMiddleCutBacon {
         driverFactory.saveEntryOrFryAgainPage.clickServeEntryIcon();
 
         //enter user details
-        driverFactory.enterUserDetailsPage.enterNickname(TinasheProfile.NICKNAME.getProfileValue());
-        driverFactory.enterUserDetailsPage.enterFirstname(TinasheProfile.NAME.getProfileValue());
-        driverFactory.enterUserDetailsPage.enterSurname(TinasheProfile.SURNAME.getProfileValue());
-        driverFactory.enterUserDetailsPage.enterCellphone(TinasheProfile.NUMBER.getProfileValue());
-        driverFactory.enterUserDetailsPage.enterEmail(TinasheProfile.EMAIL.getProfileValue());
+        driverFactory.enterUserDetailsPage.enterNickname(UserProfile.NICKNAME.getProfileValue());
+        driverFactory.enterUserDetailsPage.enterFirstname(UserProfile.NAME.getProfileValue());
+        driverFactory.enterUserDetailsPage.enterSurname(UserProfile.SURNAME.getProfileValue());
+        driverFactory.enterUserDetailsPage.enterCellphone(UserProfile.NUMBER.getProfileValue());
+        driverFactory.enterUserDetailsPage.enterEmail(UserProfile.EMAIL.getProfileValue());
 
         driverFactory.enterUserDetailsPage.clickSubmitButton();
         System.out.println("Successfully submitted entry after 6600 seconds");

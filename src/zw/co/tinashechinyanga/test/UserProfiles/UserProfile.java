@@ -3,12 +3,12 @@ package zw.co.tinashechinyanga.test.UserProfiles;
 /**
  * Created by Tinashe.Chinyanga on 9/1/2017.
  */
-public enum TinasheProfile{
-    NICKNAME("T6"), NAME("Tinashe"), SURNAME("Chinyanga"), EMAIL("chinyangatj@gmail.com"), NUMBER("0777222134");
+public enum UserProfile {
+    NICKNAME("NIC"), NAME("yourName"), SURNAME("yourSurname"), EMAIL("youremail@provider.com"), NUMBER("yourMobileNumber");
 
     private String value;
 
-    private TinasheProfile(String value){
+    private UserProfile(String value){
         this.value = value;
     }
 

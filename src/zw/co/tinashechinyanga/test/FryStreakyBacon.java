@@ -2,6 +2,7 @@ package zw.co.tinashechinyanga.test;
 
 import org.junit.Test;
 import zw.co.tinashechinyanga.test.Factory.DriverFactory;
+import zw.co.tinashechinyanga.test.UserProfiles.UserProfile;
 import zw.co.tinashechinyanga.test.UserProfiles.YendeiProfile;
 import zw.co.tinashechinyanga.test.Utils.CommonUtils;
 
@@ -24,11 +25,11 @@ public class FryStreakyBacon {
 
         driverFactory.saveEntryOrFryAgainPage.clickServeEntryIcon();
 
-        driverFactory.enterUserDetailsPage.enterNickname(YendeiProfile.NICKNAME.getValue());
-        driverFactory.enterUserDetailsPage.enterFirstname(YendeiProfile.NAME.getValue());
-        driverFactory.enterUserDetailsPage.enterSurname(YendeiProfile.SURNAME.getValue());
-        driverFactory.enterUserDetailsPage.enterEmail(YendeiProfile.EMAIL.getValue());
-        driverFactory.enterUserDetailsPage.enterCellphone(YendeiProfile.NUMBER.getValue());
+        driverFactory.enterUserDetailsPage.enterNickname(UserProfile.NICKNAME.getProfileValue());
+        driverFactory.enterUserDetailsPage.enterFirstname(UserProfile.NAME.getProfileValue());
+        driverFactory.enterUserDetailsPage.enterSurname(UserProfile.SURNAME.getProfileValue());
+        driverFactory.enterUserDetailsPage.enterEmail(UserProfile.EMAIL.getProfileValue());
+        driverFactory.enterUserDetailsPage.enterCellphone(UserProfile.NUMBER.getProfileValue());
 
         driverFactory.enterUserDetailsPage.clickSubmitButton();
 
