@@ -1,4 +1,6 @@
 #ignore class files
 target/
 *.class
+*.log
 .idea
+.idea/
