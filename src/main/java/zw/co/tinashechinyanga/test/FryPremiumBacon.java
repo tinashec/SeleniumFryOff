@@ -2,7 +2,6 @@ package zw.co.tinashechinyanga.test;
 
 import org.junit.Test;
 import zw.co.tinashechinyanga.test.Factory.DriverFactory;
-import zw.co.tinashechinyanga.test.UserProfiles.MunozProfile;
 import zw.co.tinashechinyanga.test.UserProfiles.UserProfile;
 import zw.co.tinashechinyanga.test.Utils.CommonUtils;
 
@@ -19,7 +18,7 @@ public class FryPremiumBacon {
         driverFactory.selectBaconPage.selectBacon(CommonUtils.PREMIUM_BACON);
 
         //fry for as long as you can
-        driverFactory.fryBaconPage.fryBaconFor(11600, CommonUtils.PREMIUM_BACON);
+        driverFactory.fryBaconPage.fryBaconFor(5, CommonUtils.PREMIUM_BACON);
 
         CommonUtils.waitForElemenVisibility();
 

@@ -21,7 +21,7 @@ public class FryMiddleCutBacon {
         driverFactory.selectBaconPage.selectBacon(CommonUtils.MIDDLE_CUT_BACON);
 
         //fry for as long as you can
-        driverFactory.fryBaconPage.fryBaconFor(11200, CommonUtils.MIDDLE_CUT_BACON);
+        driverFactory.fryBaconPage.fryBaconFor(5, CommonUtils.MIDDLE_CUT_BACON);
 
         //clear chrome cookies and populate with headless driver cookies for session data
 //        DriverUtils.getDriver().manage().deleteAllCookies();
